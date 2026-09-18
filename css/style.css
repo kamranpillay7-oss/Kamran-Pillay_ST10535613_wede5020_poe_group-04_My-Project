@@ -1,0 +1,406 @@
+/* K.P Fashion Website Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+nav ul li a:focus {
+    color: #d4af37;
+    outline: 2px solid #d4af37;
+    outline-offset: 4px;
+}
+
+nav ul li a:active {
+    color: #ffffff;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #111111;
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+main ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+.call-to-action-btn {
+    margin-top: 25px;
+}
+
+.call-to-action-btn a {
+    display: inline-block;
+    background-color: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.call-to-action-btn a:hover {
+    background-color: #d4af37;
+    color: #111111;
+}
+
+.call-to-action-btn a:focus {
+    background-color: #d4af37;
+    color: #111111;
+    outline: 2px solid #111111;
+    outline-offset: 3px;
+}
+
+.call-to-action-btn a:active {
+    transform: scale(0.98);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.product-card {
+    border: 1px solid #dddddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-card h2 {
+    margin-top: 15px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+}
+
+.product-card ul {
+    margin-left: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #d4af37;
+    border-color: #d4af37;
+}
+
+input[type="submit"] {
+    width: auto;
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #d4af37;
+    color: #111111;
+}
+
+input[type="submit"]:focus {
+    background-color: #d4af37;
+    color: #111111;
+    outline: 2px solid #111111;
+    outline-offset: 3px;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+main a {
+    transition: 0.3s;
+}
+
+main a:hover {
+    color: #d4af37;
+}
+
+main a:focus {
+    outline: 2px solid #d4af37;
+    outline-offset: 3px;
+}
+
+footer {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding: 30px 20px;
+    }
+
+    section {
+        max-width: 90%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 8px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: auto;
+    }
+
+    .call-to-action-btn a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    main img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    main {
+        padding: 15px 10px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+}
