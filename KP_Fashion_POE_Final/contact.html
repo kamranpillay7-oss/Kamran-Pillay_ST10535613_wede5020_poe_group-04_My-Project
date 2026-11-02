@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact K.P Fashion in Braamfontein, Johannesburg by email, phone or the online contact form.">
+    <meta name="keywords" content="contact K.P Fashion, Braamfontein fashion contact, Johannesburg clothing contact">
+    <meta name="author" content="Kamran Pillay">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kamranpillay7-oss.github.io/Kamran-Pillay_ST10535613_wede5020_poe_group-04_My-Project/contact.html">
+    <title>Contact K.P Fashion | Braamfontein</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand-block">
+            <h1>K.P Fashion</h1>
+            <img src="Images/logo.png" width="150" height="150" alt="K.P Fashion black and gold logo">
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reveal">
+            <h2>Contact K.P Fashion</h2>
+            <p>Send a general message, feedback or a question. The form checks your information and then creates an email that you can send using your own email app.</p>
+        </section>
+
+        <div class="contact-layout">
+            <section class="form-card reveal" aria-labelledby="contact-form-title">
+                <h2 id="contact-form-title">Contact Form</h2>
+                <form id="contact-form" action="mailto:Kamran7@gmail.com" method="post" enctype="text/plain" novalidate>
+                    <div class="form-group">
+                        <label for="contact-name">Full Name</label>
+                        <input type="text" id="contact-name" name="name" required minlength="2" maxlength="60" autocomplete="name" pattern="[A-Za-zÀ-ž' -]{2,60}">
+                        <small class="error-message" id="contact-name-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" name="email" required maxlength="100" autocomplete="email" placeholder="you@example.com">
+                        <small class="error-message" id="contact-email-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-phone">Contact Number</label>
+                        <input type="tel" id="contact-phone" name="phone" required autocomplete="tel" pattern="[0-9+ -]{9,15}" maxlength="15" placeholder="081 234 5678">
+                        <small class="error-message" id="contact-phone-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-type">Type of Message</label>
+                        <select id="contact-type" name="type" required>
+                            <option value="">Select message type</option>
+                            <option value="General message">General message</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Complaint">Complaint</option>
+                            <option value="Compliment">Compliment</option>
+                        </select>
+                        <small class="error-message" id="contact-type-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="6" required minlength="10" maxlength="500" placeholder="Type your message here..."></textarea>
+                        <small class="error-message" id="contact-message-error"></small>
+                    </div>
+
+                    <div class="choice-row">
+                        <input type="checkbox" id="contact-consent" name="consent" value="yes" required>
+                        <label for="contact-consent">I agree that K.P Fashion may reply to this message.</label>
+                    </div>
+                    <small class="error-message" id="contact-consent-error"></small>
+
+                    <button type="submit" class="primary-button">Create Email</button>
+                </form>
+
+                <div id="email-preview" class="response-box is-hidden" aria-live="polite">
+                    <h3>Your Email Is Ready</h3>
+                    <p><strong>To:</strong> <span id="preview-to"></span></p>
+                    <p><strong>Subject:</strong> <span id="preview-subject"></span></p>
+                    <pre id="preview-body"></pre>
+                    <a id="send-email-link" class="primary-button inline-button" href="mailto:Kamran7@gmail.com">Open in Email App</a>
+                </div>
+            </section>
+
+            <section class="contact-info-card reveal" aria-labelledby="contact-details-title">
+                <h2 id="contact-details-title">Get in Touch</h2>
+                <p><strong>Email:</strong> <a href="mailto:Kamran7@gmail.com">Kamran7@gmail.com</a></p>
+                <p><strong>Phone/WhatsApp:</strong> <a href="tel:0814450325">0814450325</a></p>
+                <p><strong>Location:</strong> Braamfontein, Johannesburg</p>
+                <h3>Map</h3>
+                <div id="map" class="map-box" aria-label="Interactive map showing Braamfontein, Johannesburg"></div>
+                <p class="map-note">The map shows the general Braamfontein area for this student project.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact email: <a href="mailto:Kamran7@gmail.com">Kamran7@gmail.com</a></p>
+        <p>&copy; <span class="current-year">2026</span> ST10535613 | K.P Fashion</p>
+    </footer>
+</body>
+</html>
