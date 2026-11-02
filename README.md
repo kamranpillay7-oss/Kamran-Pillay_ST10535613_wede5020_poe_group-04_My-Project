@@ -1,115 +1,258 @@
-# K.P Fashion Website
-
-## About the Project
-
-K.P Fashion is a fashion website that I created for my project.
-
-The website allows users to view different clothing and shoe categories, learn more about K.P Fashion, send enquiries and find contact information.
-
-## Website Pages
-
-My website has five pages:
-
-- Home
-- About Us
-- Products
-- Enquiries
-- Contact Us
-
-## Technologies Used
-
-For this website I used:
-
-- HTML
-- CSS
-- CSS Grid
-- Flexbox
-- Media Queries
-- GitHub
-
-## Part 1 Feedback
-
-For Part 1 I received 47/100.
-
-After looking at my feedback, I saw that there were a few things I needed to improve.
-
-Some of the main problems were my folder structure, README, changelog, references and comments in my code.
-
-My HTML structure, website content and navigation were some of the stronger parts of my Part 1 submission.
-
-## Changes I Made for Part 2
-
-For Part 2 I made changes to improve my website and fix some of the problems from Part 1.
-
-I created separate folders for my CSS and images so that my project files are more organised.
-
-I renamed my image files so that they are easier to use.
-
-I also corrected the image and CSS paths in my HTML files.
-
-I created an external CSS stylesheet and linked it to all of my website pages.
-
-I used Flexbox for my navigation and CSS Grid for the Products page.
-
-I also added hover, focus and active effects to some of the links, buttons and form fields.
-
-I improved the enquiry form and added responsive design so that the website can work on different screen sizes.
-
-## Responsive Design
-
-I used media queries to make my website responsive.
-
-The screen sizes I used are:
-
-- Desktop: above 1024px
-- Tablet: up to 1024px
-- Mobile: up to 768px
-- Small mobile: up to 480px
-
-On smaller screens, the navigation moves into a vertical layout.
-
-The product cards also change into one column and the images and text adjust to fit the screen.
-
-## Testing
-
-I tested my website to make sure that:
-
-- The navigation links work.
-- All the pages open.
-- The images display correctly.
-- The CSS works on all pages.
-- The enquiry form displays correctly.
-- The website adjusts on smaller screens.
-
-## Changelog
-
-### Part 2 Changes
-
-- Added an external CSS stylesheet.
-- Linked the CSS file to all pages.
-- Created separate CSS and Images folders.
-- Renamed the image files.
-- Fixed the image paths.
-- Fixed the CSS file paths.
-- Added Flexbox to the navigation.
-- Added CSS Grid to the Products page.
-- Styled the enquiry form.
-- Added hover, focus and active effects.
-- Added media queries.
-- Improved the mobile layout.
-- Improved responsive images.
-- Updated the README.
-- Added a changelog.
-- Used clearer GitHub commit messages.
-
-## References
-
-Mozilla Developer Network (MDN) (2026) *Basic concepts of grid layout*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Basic_concepts (Accessed: 18 September 2026).
-
-Mozilla Developer Network (MDN) (2026) *Basic concepts of flexbox*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts (Accessed: 18 September 2026).
-
-Mozilla Developer Network (MDN) (2026) *CSS media queries*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries (Accessed: 18 September 2026).
+# K.P Fashion Website - Final POE
 
 ## Student Details
 
-Student Number: ST10535613
+- Student: Kamran Pillay
+- Student Number: ST10535613
+- Module: WEDE5020
+- Project: K.P Fashion
+
+## About the Project
+
+K.P Fashion is a fashion website created for my WEDE5020 project. The website allows users to browse women's fashion, men's fashion and shoes, search and filter products, send product enquiries and contact K.P Fashion.
+
+The final POE builds on my Part 1 HTML website and my Part 2 CSS and responsive design work.
+
+## Website Pages
+
+- Home - `index.html`
+- About Us - `about.html`
+- Products - `products.html`
+- Enquiries - `enquiries.html`
+- Contact Us - `contact.html`
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- JSON
+- CSS Grid
+- Flexbox
+- Media Queries
+- Fetch API / AJAX
+- Leaflet and OpenStreetMap for the interactive map
+- GitHub and GitHub Pages
+
+## Part 2 Feedback and Improvements
+
+The Part 2 feedback showed that the website was good overall but still had a few areas to improve.
+
+### Feedback / Changelog
+
+- The feedback and changelog section scored 8/10. For Part 3 I expanded the changelog so the lecturer can clearly see what was changed and why.
+- Decoration and colour scored 4/5. I made the black, white and gold styling more consistent across product cards, forms, buttons, tabs and interactive states.
+- GitHub commits scored 4/5. For Part 3 I will use regular descriptive commit messages instead of broad messages such as "update files".
+- The README scored 3/5. I expanded the README to include the final website structure, JavaScript features, SEO work, validation, deployment instructions, testing and references.
+
+## Part 3 Functionality
+
+### JavaScript Enhancements
+
+The site now uses one shared JavaScript file: `js/script.js`.
+
+JavaScript features include:
+
+- Time-based greeting on the Home page.
+- Scroll reveal animations using the Intersection Observer API.
+- About Us tabs for Story, Mission and Vision.
+- Image lightbox gallery using the HTML `dialog` element.
+- Dynamic product data loaded from `data/products.json` using `fetch()`.
+- Product search, category filtering and price/name sorting.
+- DOM manipulation to create product cards from JSON data.
+- FAQ accordion on the Enquiries page.
+- Interactive Leaflet map on the Contact page.
+- JavaScript form validation and error messages.
+- AJAX enquiry form submission using FormSubmit.
+- Dynamic enquiry response showing the selected product's price and availability.
+- Contact form that creates an email preview and mailto link.
+
+## Form Functionality and Validation
+
+### Enquiries Form
+
+The Enquiries form collects:
+
+- Full name
+- Email address
+- Contact number
+- Enquiry type
+- Product
+- Preferred size
+- Message
+- Consent
+
+HTML5 validation attributes and JavaScript validation are used before submission. When a product is selected, JavaScript displays its price and availability in the response. The form uses a FormSubmit AJAX endpoint for asynchronous submission.
+
+### Contact Form
+
+The Contact form collects:
+
+- Full name
+- Email address
+- Contact number
+- Message type
+- Full message
+- Consent
+
+After validation, JavaScript compiles the information into an email preview. The user can then open the completed message in their email application.
+
+## SEO Improvements
+
+The final POE includes the following SEO improvements:
+
+- Unique title tag on every page.
+- Unique meta description on every page.
+- Relevant keywords included naturally in page content and metadata.
+- Correct heading structure.
+- Descriptive image file names and alt text.
+- Cleaner file names such as `about.html` and `contact.html` instead of spaces in URLs.
+- Internal links between relevant pages.
+- Responsive mobile-friendly layout.
+- Lazy loading on non-critical images.
+- Large Part 2 images were resized and compressed for faster page loading.
+- `robots.txt` file.
+- `sitemap.xml` file.
+- Local Braamfontein / Johannesburg information for local relevance.
+- Off-page SEO can be supported after publishing by sharing the GitHub Pages link on social media and earning genuine external links; backlinks cannot be created reliably inside the website code itself.
+
+## Basic Security Improvements
+
+- Form inputs are validated before processing.
+- A honeypot field is included on the enquiry form to reduce simple bot spam.
+- The Leaflet CDN files use integrity and crossorigin attributes.
+- GitHub Pages provides HTTPS when the site is deployed.
+- The project does not store passwords, card details or other sensitive account information.
+
+## Folder Structure
+
+```text
+K.P-Fashion
+├── css
+│   └── style.css
+├── data
+│   └── products.json
+├── Images
+│   ├── logo.png
+│   ├── mens-fashion.jpg
+│   ├── shoes.jpg
+│   └── womens-fashion.jpg
+├── js
+│   └── script.js
+├── index.html
+├── about.html
+├── products.html
+├── enquiries.html
+├── contact.html
+├── robots.txt
+├── sitemap.xml
+├── .nojekyll
+└── README.md
+```
+
+## Testing
+
+I tested the website to check that:
+
+- All navigation links work.
+- JavaScript loads without syntax errors.
+- Product data loads through Live Server / GitHub Pages.
+- Search, filter and sort controls work.
+- The lightbox opens and closes.
+- About Us tabs work.
+- FAQ accordion works.
+- Enquiry and Contact forms display validation errors when information is invalid.
+- The Contact form creates a correctly formatted email link.
+- The website responds to desktop, tablet and mobile screen sizes.
+- Images display with alt text.
+- `robots.txt` and `sitemap.xml` are included.
+
+## GitHub Commit Plan
+
+Part 3 should be committed in smaller descriptive steps. Suggested commit messages:
+
+1. `Add Part 2 feedback fixes and improve styling`
+2. `Add JavaScript tabs gallery and animations`
+3. `Add dynamic products search filter and sort`
+4. `Add enquiry form validation and AJAX response`
+5. `Add contact form validation and interactive map`
+6. `Add SEO metadata robots and XML sitemap`
+7. `Update README and Part 3 changelog`
+8. `Final POE testing and deployment updates`
+
+## GitHub Pages Deployment
+
+The project is prepared for GitHub Pages deployment from the `main` branch and repository root.
+
+Expected website address:
+
+`https://kamranpillay7-oss.github.io/Kamran-Pillay_ST10535613_wede5020_poe_group-04_My-Project/`
+
+To publish:
+
+1. Upload/push the final Part 3 files to the repository.
+2. Open the repository **Settings**.
+3. Open **Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Select `main` and `/(root)`.
+6. Save and use the published GitHub Pages link in the LMS submission.
+
+## Changelog
+
+### Part 1
+
+- Created the first five HTML pages.
+- Added website content, images and navigation.
+
+### Part 2
+
+- Added an external CSS stylesheet.
+- Improved file and folder structure.
+- Added Flexbox navigation and CSS Grid product layout.
+- Added responsive breakpoints for desktop, tablet and mobile.
+- Added hover, focus and active states.
+- Improved form styling.
+- Updated README, references and GitHub commits.
+
+### Part 3 / Final POE
+
+- Renamed `about us.html` to `about.html` and `contact us.html` to `contact.html` for cleaner URLs.
+- Added unique SEO titles, descriptions and keywords to every page.
+- Added `robots.txt` and `sitemap.xml`.
+- Added a shared JavaScript file.
+- Added a time-based welcome message.
+- Added scroll reveal animations.
+- Added interactive About Us tabs.
+- Added an image gallery and lightbox.
+- Added dynamic product data stored in JSON.
+- Added product search, filtering and sorting.
+- Added FAQ accordion functionality.
+- Added an interactive map on the Contact page.
+- Added a complete Enquiries form with HTML5 and JavaScript validation.
+- Added AJAX submission to the Enquiries form.
+- Added a product price and availability response after enquiry validation.
+- Added a separate Contact form with validation.
+- Added email preview and mailto functionality to the Contact form.
+- Improved visual consistency in buttons, cards, forms and interactive elements.
+- Resized and compressed the main fashion images to improve page speed.
+- Added basic security improvements including validation, a form honeypot and Subresource Integrity on the map library.
+- Added `.nojekyll` for straightforward GitHub Pages static-site publishing.
+- Expanded README documentation and the feedback changelog.
+
+## References
+
+FormSubmit (2026) *FormSubmit Documentation*. Available at: https://formsubmit.co/documentation (Accessed: 2 November 2026).
+
+FormSubmit (2026) *Form submission with AJAX*. Available at: https://formsubmit.co/ajax-documentation (Accessed: 2 November 2026).
+
+GitHub (2026) *Configuring a publishing source for your GitHub Pages site*. Available at: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site (Accessed: 2 November 2026).
+
+Leaflet (2026) *Leaflet - an open-source JavaScript library for mobile-friendly interactive maps*. Available at: https://leafletjs.com/ (Accessed: 2 November 2026).
+
+Mozilla Developer Network (MDN) (2026) *Fetch API*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 2 November 2026).
+
+Mozilla Developer Network (MDN) (2026) *Client-side form validation*. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation (Accessed: 2 November 2026).
+
+Mozilla Developer Network (MDN) (2026) *HTMLDialogElement*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement (Accessed: 2 November 2026).
+
+OpenStreetMap contributors (2026) *OpenStreetMap*. Available at: https://www.openstreetmap.org/ (Accessed: 2 November 2026).

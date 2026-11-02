@@ -1,0 +1,33 @@
+K.P FASHION PART 3 / FINAL POE - SUBMISSION CHECKLIST
+
+1. Open the project through Live Server while testing locally.
+   Dynamic products use fetch(), so opening products.html directly from a ZIP/file path may not load the JSON.
+
+2. Before uploading to GitHub, remove the OLD files if they still exist:
+   - about us.html
+   - contact us.html
+   Keep the new files:
+   - about.html
+   - contact.html
+
+3. Upload/push all final files and folders to the repository root.
+
+4. Use descriptive GitHub commits. Examples are in README.md.
+
+5. Enable GitHub Pages:
+   Settings > Pages > Deploy from a branch > main > /(root) > Save.
+
+6. Visit the published site and test:
+   - navigation
+   - product search/filter/sort
+   - lightbox
+   - enquiry form validation
+   - contact email preview
+   - map
+   - mobile layout
+
+7. FormSubmit note:
+   The first live submission may send an activation email to Kamran7@gmail.com.
+   Confirm it if you want the AJAX form to deliver real enquiry emails.
+
+8. Submit the GitHub repository link and the deployed GitHub Pages link if the LMS provides a field for it.

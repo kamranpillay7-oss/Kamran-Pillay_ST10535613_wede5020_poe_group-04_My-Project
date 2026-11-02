@@ -1,142 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products | K.P Fashion</title>
-
+    <meta name="description" content="Browse K.P Fashion women's fashion, men's fashion and shoes. Search, filter and enquire about prices, sizes and availability.">
+    <meta name="keywords" content="K.P Fashion products, women's clothing Johannesburg, men's clothing Braamfontein, shoes Johannesburg">
+    <meta name="author" content="Kamran Pillay">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kamranpillay7-oss.github.io/Kamran-Pillay_ST10535613_wede5020_poe_group-04_My-Project/products.html">
+    <title>Fashion Products | K.P Fashion</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/script.js" defer></script>
 </head>
-
 <body>
-
-    <header>
-
-        <div>
+    <header class="site-header">
+        <div class="brand-block">
             <h1>K.P Fashion</h1>
-
-            <img src="Images/logo.png" width="200" height="200" alt="K.P Fashion logo">
+            <img src="Images/logo.png" width="150" height="150" alt="K.P Fashion black and gold logo">
         </div>
-
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about us.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" aria-current="page">Products</a></li>
                 <li><a href="enquiries.html">Enquiries</a></li>
-                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-
     </header>
 
-
     <main>
-
-        <section id="hero-section">
-
+        <section class="reveal">
             <h2>Our Products</h2>
-
             <h3>Discover Your Style with K.P Fashion</h3>
-
-            <p>
-                Explore the latest styles from K.P Fashion, carefully
-                selected to help you express your personality and feel
-                confident in what you wear.
-            </p>
-
-
-            <!-- Women's Fashion -->
-
-            <h2>Our Collections</h2>
-
-            <div class="product-grid">
-
-                <div class="product-card">
-
-                    <img src="Images/womens-fashion.jpg" alt="Women's Fashion">
-
-                    <h2>Women's Fashion</h2>
-
-                    <p>
-                        Discover stylish pieces for everyday wear,
-                        special occasions and everything in between.
-                    </p>
-
-                    <h3>Featured Products</h3>
-
-                    <ul>
-                        <li>Dresses</li>
-                        <li>Tops &amp; Blouses</li>
-                        <li>Skirts</li>
-                        <li>Trousers &amp; Jeans</li>
-                        <li>Jackets &amp; Coats</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="product-card">
-
-                    <img src="Images/mens-fashion.jpg" alt="Men's Fashion">
-
-                    <h2>Men's Fashion</h2>
-
-                    <p>
-                        Find modern and comfortable styles designed
-                        for every occasion.
-                    </p>
-
-                    <h3>Featured Products</h3>
-
-                    <ul>
-                        <li>Shirts</li>
-                        <li>T-Shirts</li>
-                        <li>Trousers</li>
-                        <li>Jeans</li>
-                        <li>Jackets</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="product-card">
-
-                    <img src="Images/shoes.jpg" alt="Shoes">
-
-                    <h2>Shoes</h2>
-
-                    <p>
-                        Complete your look with fashionable footwear
-                        for casual and formal occasions.
-                    </p>
-
-                    <h3>Featured Products</h3>
-
-                    <ul>
-                        <li>Sneakers</li>
-                        <li>Heels</li>
-                        <li>Sandals</li>
-                        <li>Boots</li>
-                        <li>Formal Shoes</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
+            <p>Search our collection, filter by category and sort the results to find something that suits your style.</p>
         </section>
 
+        <section class="product-tools reveal" aria-labelledby="product-search-title">
+            <h2 id="product-search-title">Find a Product</h2>
+            <div class="filter-grid">
+                <div>
+                    <label for="product-search">Search</label>
+                    <input type="search" id="product-search" placeholder="Search dresses, shirts, shoes...">
+                </div>
+                <div>
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter">
+                        <option value="all">All categories</option>
+                        <option value="Womens Fashion">Women's Fashion</option>
+                        <option value="Mens Fashion">Men's Fashion</option>
+                        <option value="Shoes">Shoes</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="product-sort">Sort by</label>
+                    <select id="product-sort">
+                        <option value="name-asc">Name: A-Z</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <p id="product-count" class="result-count" aria-live="polite">Loading products...</p>
+        </section>
+
+        <section aria-labelledby="collection-title" class="reveal">
+            <h2 id="collection-title">Our Collections</h2>
+            <div id="dynamic-product-grid" class="product-grid">
+                <p class="loading-message">Loading products...</p>
+            </div>
+            <noscript><p>Please enable JavaScript to use the product search and dynamic product list.</p></noscript>
+        </section>
     </main>
 
+    <dialog id="lightbox" class="lightbox">
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close image">&times;</button>
+        <img id="lightbox-image" src="Images/logo.png" alt="">
+        <p id="lightbox-caption"></p>
+    </dialog>
 
     <footer>
-        <p>Contact email: Kamran7@gmail.com</p>
-        <p>&copy; 2026 ST10535613</p>
+        <p>Contact email: <a href="mailto:Kamran7@gmail.com">Kamran7@gmail.com</a></p>
+        <p>&copy; <span class="current-year">2026</span> ST10535613 | K.P Fashion</p>
     </footer>
-
 </body>
-
 </html>
